@@ -1,8 +1,121 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-</head>
-<body>
-  
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav>
+          <ul class="ul-nav">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Example code</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#projects">My projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="photo-header">
+          <section>
+            <img src="./avatar.JPG" alt="my photo" width="400px" />
+          </section>
+          <section>
+            <h1>Elsukov Sergey</h1>
+            <h3>Front-End Developer (Beginner)</h3>
+          </section>
+        </div>
+
+        <div class="sides">
+          <div class="side">
+            <section>
+              <h2 id="about">About Me</h2>
+              <p>
+                I'm a design engineer. I often develop programs for solving
+                physical and mathematical problems on a personal computer. I
+                like to program and to learn new things in this field. I want to
+                gain enough knowledge and practice to develop websites and
+                applications for mobile devices.
+              </p>
+            </section>
+            <section>
+              <h2 id="education">Education</h2>
+              <p>
+                Samara State University, Faculty of Physics, specialty of
+                general and theoretical physics
+              </p>
+            </section>
+
+            <section>
+              <h2 id="skills">Skills</h2>
+              <ul>
+                <li>Delphi</li>
+                <li>JavaScript (basic)</li>
+              </ul>
+            </section>
+            <section>
+              <h2 id="languages">Languages</h2>
+              <ul>
+                <li>Russian - native</li>
+                <li>English - A1</li>
+              </ul>
+            </section>
+          </div>
+          <div class="side">
+            <section>
+              <h2 id="code">Example code</h2>
+              <pre>
+                <code>
+                  function dayPlan (hours, tasks, duration){
+                    if (!tasks) return [];
+                    let schedule = [];
+                    let rest = Math.round((60*hours-tasks*duration)/(tasks-1));
+                    if (rest<0) return 'You\'re not sleeping tonight!';
+                    for (let i=1; i < tasks; i++){
+                      schedule.push(duration);
+                      schedule.push(rest);
+                    }
+                    schedule.push(duration);
+                    return schedule;
+                  }
+                </code>
+              </pre>
+            </section>
+            <section>
+              <h2 id="contacts">Contact information</h2>
+              <ul>
+                <li>Address: Samara, Russian Federation</li>
+                <li>Mobile phone: +7(929)705-28-50</li>
+                <li>E-mail: adonisiy@list.ru</li>
+                <li>Discord: ...</li>
+              </ul>
+            </section>
+            <section>
+              <h2 id="experience">Experience</h2>
+              <p>I have no experience in the field of front-end development</p>
+            </section>
+
+            <section>
+              <h2 id="projects">My project</h2>
+              <p>My CV</p>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <a href="https://github.com/Adonisiy">GitHub</a>
+        <span>2023</span>
+        <img
+          src="https://rs.school/images/rs_school_js.svg"
+          alt="Логотип курсов"
+          width="100px"
+          height="30px"
+        />
+      </footer>
+    </div>
+  </body>
 </html>
